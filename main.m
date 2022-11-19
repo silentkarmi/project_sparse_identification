@@ -13,20 +13,23 @@ X(end,:) = [];
 
 P = possible_coefficients(order,X);
 
-disp("dx coefficients")
-disp("---------------")
+disp("---------------");
+disp("dx coefficients");
+disp("---------------");
 lasso_model = lasso(P,dX(:,1)); 
 sparse_matrix = (lasso_model(:,25));
-print_dependent_coefficients(sparse_matrix, order)
+disp(print_dependent_coefficients(sparse_matrix, order));
 
-disp("dy coefficients")
-disp("---------------")
+disp("---------------");
+disp("dy coefficients");
+disp("---------------");
 lasso_model = lasso(P,dX(:,2));
 sparse_matrix = (lasso_model(:,25));
-print_dependent_coefficients(sparse_matrix, order)
+disp(print_dependent_coefficients(sparse_matrix, order));
 
-disp("dz coefficients")
-disp("---------------")
+disp("---------------");
+disp("dz coefficients");
+disp("---------------");
 lasso_model = lasso(P,dX(:,3));
 sparse_matrix = (lasso_model(:,25));
-print_dependent_coefficients(sparse_matrix, order)
+disp(print_dependent_coefficients(sparse_matrix, order));
