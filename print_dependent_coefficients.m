@@ -4,7 +4,7 @@ function coefficeints = print_dependent_coefficients(sparse_matrix, order)
 
     coefficeints = "";
     [min,max] = bounds(sparse_matrix);
-    tolerance_percentage = 2;
+    tolerance_percentage = 1;
     tolerance = (max - min) * tolerance_percentage/100;
     index = 1;
     for i = 0:order
@@ -14,7 +14,7 @@ function coefficeints = print_dependent_coefficients(sparse_matrix, order)
                     continue;
                 end
 
-                value = round(sparse_matrix(index),4);
+                value = round(sparse_matrix(index),6);
                 index = index + 1;
 
                 if abs(value) <= 0 + tolerance && abs(value) >= 0 - tolerance

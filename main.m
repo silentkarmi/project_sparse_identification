@@ -1,6 +1,6 @@
 clear all
 clc
-[X,dX] = get_lorenz_data(50);
+[X,dX] = get_lorenz_data(250);
 % dX(row+1, column+1) = 0;
 
 order = 1;
@@ -24,7 +24,7 @@ disp("---------------");
 disp("dy coefficients");
 disp("---------------");
 lasso_model = lasso(P,dX(:,2));
-sparse_matrix = (lasso_model(:,25));
+sparse_matrix = (lasso_model(:,50));
 disp(print_dependent_coefficients(sparse_matrix, order));
 
 disp("---------------");
