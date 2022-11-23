@@ -7,8 +7,8 @@ function P = possible_coefficients(order, X)
                 if i == 0 && j ==0 & k == 0
                     continue
                 end
-                coeff = (X(:,1).^i) .* (X(:,2).^j) .* (X(:,3).^k);
-                P = [P coeff];
+                coeff_matrix = (X(:,1).^i) .* (X(:,2).^j) .* (X(:,3).^k);
+                P = [P coeff_matrix];
 
                 coeff = "";
 

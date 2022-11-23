@@ -1,4 +1,4 @@
-function dX = lorenz_system(t,X)
+function dX = lorenz_system(t,X,u)
 %Creates a lorenz system with some fixed constant sigma rho beta paramters
 
     sigma = 10;
@@ -9,7 +9,7 @@ function dX = lorenz_system(t,X)
     y = X(2);
     z = X(3);
     
-    dx = sigma * (y - x);
+    dx = sigma * (y - x) + u;
     dy = x * (rho - z) - y;
     dz = x*y - beta * z;
 

@@ -1,12 +1,17 @@
 clear all
 clc
-[X,dX] = get_lorenz_data(250);
+[t,X,dX] = get_lorenz_data(10);
 % dX(row+1, column+1) = 0;
+t = transpose(t);
 
 order = 1;
 
 x = X(:,1);
+xt = [t x];
+
 y = X(:,2);
+yt = [t y];
+
 z = X(:,3);
 
 X(end,:) = [];
@@ -33,3 +38,5 @@ disp("---------------");
 lasso_model = lasso(P,dX(:,3));
 sparse_matrix = (lasso_model(:,25));
 disp(print_dependent_coefficients(sparse_matrix, order));
+
+mpc_controller
