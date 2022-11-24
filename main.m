@@ -1,7 +1,7 @@
 clear all
 clc
-[t,X,dX] = get_lorenz_data(10);
-% dX(row+1, column+1) = 0;
+[t,X,dX] = get_lorenz_data(100);
+
 t = transpose(t);
 
 order = 1;
