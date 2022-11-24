@@ -10,3 +10,6 @@ Note: Code depends on Control System Toolbox and Model Predictive Controller Too
 ***
 [Github Code - SINDy-MPC](https://github.com/silentkarmi/project_sparse_identification)
 ***
+***
+[Video Link to Presentation](https://drive.google.com/file/d/1Svr8VbieC5l61-8BbrJxw_D6fI8DkYLx/view?usp=share_link)
+***
