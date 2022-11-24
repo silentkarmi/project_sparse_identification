@@ -1,6 +1,6 @@
 # Sparse identification of nonlinear dynamics for model predictive control
 ***
-Note: Code depends on Control System Toolbox and Model Predictive Controller Toolbox
+Note: Code depends on Control System Toolbox, Model Predictive Controller Toolbox and Statistics and Machine Learning Toolbox
 ***
 1. Open main.m Matlab code.
 2. Run the code: Generates Lorenz system and initializes MPC controller
