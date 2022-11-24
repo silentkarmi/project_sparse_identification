@@ -1,4 +1,4 @@
-# Sparse identificationof nonlinear dynamics for model predictive control
+# Sparse identification of nonlinear dynamics for model predictive control
 ***
 Note: Code depends on Control System Toolbox and Model Predictive Controller Toolbox
 ***
